@@ -1,0 +1,23 @@
+<html>
+<body>
+<input id="t" type="text" name="txt">
+<input type="button" name="but" value="Length of String" onclick="lenstr()">
+<p id="val"></p>
+<p id="l"></p>
+</body>
+<script type="text/javascript">
+function lenstr(){
+var s = document.getElementById("t").value;
+m=0;
+x=" ";
+p = s.split(" ");
+for(i=0;i<p.length;i++){
+if(m<p[i].length)
+m=p[i].length;
+x=p[i];
+}
+document.getElementById("val").innerHTML = x;
+document.getElementById("l").innerHTML = m;
+}
+</script>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Tesla Catalog</title>
+        <script type="text/javascript" src="car.js"></script>
+        <style>
+            table {
+                text-align: center;
+                width: 100%;
+            }
+
+            td {
+                    font-size: xx-large;
+            }
+            th {
+                font-size: x-large;
+                background-color: #4CAF50;
+                color: white;
+            }
+            th:hover {
+                background-color: #4CA;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h3 style="text-align:center">Hover a Tesla Type</h3><br>
+        <table>
+            <tr id="menu">
+            </tr>
+        </table><br>
+        <hr><br>
+        <table class="table" id="data-table" hidden>
+            <tr><td>Name</td><td id="model"></td></tr><br>
+            <tr><td>Look</td><td id="picture"></td></tr><br>
+            <tr><td>Price</td><td id="price"></td></tr><br>
+            <tr><td>Year</td><td id="year"></td></tr><br>
+        </table>
+
+
+    </body>
+</html>

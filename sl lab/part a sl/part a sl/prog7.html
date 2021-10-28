@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JavaScript program check if a given positive number is a multiple of 3 or a multiple of 7. </title>
+  <script type="text/javascript" src="sample.js"></script>
+
+</head>
+<body>
+<h3 style="text-align:center">Check the divisibility of a number</h3><br>
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+<input type="button" onClick="test37()" Value="divisible by 3 or 7" />
+</form>
+<script>
+function test37() 
+{ x = document.getElementById("firstNumber").value;
+  if (x % 3 == 0 || x % 7 == 0) 
+  {
+    document.getElementById("result").innerHTML = true;
+  } 
+  else {
+    document.getElementById("result").innerHTML = false;
+  }
+
+}
+</script>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+</body>
+</html>

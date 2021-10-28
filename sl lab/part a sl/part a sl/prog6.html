@@ -1,0 +1,55 @@
+<!--Form Example-->
+
+<html>
+	<head>
+		<title>
+			Customer Feedback
+		</title>
+	</head>
+	<body>
+		<h2>Enter your feedback</h2>
+		<form action="thanks.html">
+		
+		
+			<!--Labels can be mentioned as such without need of any tag-->
+			Name <br>
+			
+			<!--Text Box-->
+			<input type="text" name="Customer_name" value="Customer Name"/><br><br>
+
+			Address <br>
+			<!--Drop down menu-->
+			<select>
+  			<option value="rt" selected>RT Nagar</option>
+  			<option value="hebbal">Hebbal</option>
+  			<option value="mathi">Mathikere</option>
+  			</select><br><br>
+			
+			Gender <br>
+			<!--Radio Button-->
+			<input type="radio" name="Customer_gender" value="male" checked> Male</input>
+			<input type="radio" name="Customer_gender" value="female"> Female</input>
+			<input type="radio" name="Customer_gender" value="other"> Other</input><br><br>
+			
+			Why should you purchase in our store?<br>
+			<!--Checkbox-->
+			<input type="checkbox" name="price_feedback" value="price_feedback" checked> Price is cheap or reasonable </input><br>
+			<input type="checkbox" name="quality_feedback" value="quality_feedback"> Best quality of goods is available </input><br>
+			<input type="checkbox" name="location_feedback" value="location_feedback" checked> Location of store is easy to access </input><br>
+			<input type="checkbox" name="availability_feedback" value="availability_feedback"> Most of the goods are always available in your stock 
+			</input><br><br>
+
+			Any other feedback<br>
+			<!--Textarea-->
+			<textarea name="other_input" rows="10" cols="150">Your service is good.</textarea><br><br>
+
+
+			<!--Button-->
+			<input type="submit" value="Submit my feedback">
+			<input type="reset" value="Reset to default">
+				
+		</form>
+	</body>
+</html>
+
+

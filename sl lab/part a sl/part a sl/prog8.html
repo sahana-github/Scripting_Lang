@@ -1,0 +1,44 @@
+<html>
+	<form>
+	Operand 1 <br> <input type="number" id="op1"> <br>
+	Operand 2 <br> <input type="number" id="op2"> <br>
+	<input type="radio" name="calc" id="add" value="Add" onclick="result()"> Add <br>
+	<input type="radio" name="calc" id="sub" value="Sub" onclick="result()"> Sub <br>
+	<input type="radio" name="calc" id="mul" value="Multiply" onclick="result()"> Multiply <br>
+	<input type="radio" name="calc" id="div" value="Divide" onclick="result()"> Divide <br>
+	</form>
+	<p id="Res"></p>
+	<script>
+	function result(){
+	var x = document.getElementById("op1").value;
+	var y = document.getElementById("op2").value;
+	if ( (x== "") || (y == "") )
+	{
+	document.getElementById("Res").innerHTML="Enter values in both fields";
+	}
+	else
+	{
+	if(document.getElementById("add").checked)
+	{
+	a = parseInt(x);
+	b = parseInt(y);
+	document.getElementById("Res").innerHTML=a+b;
+	}
+	else if(document.getElementById("sub").checked)
+	{
+	document.getElementById("Res").innerHTML=x-y;
+	}
+	else if(document.getElementById("mul").checked)
+	{
+	document.getElementById("Res").innerHTML=x*y;
+	}
+	else if(document.getElementById("div").checked)
+	{
+	if(y!=0)
+	document.getElementById("Res").innerHTML=x/y;
+	else document.getElementById("Res").innerHTML="Divide by zero";
+	}
+	}
+	}
+	</script>
+	</html>
